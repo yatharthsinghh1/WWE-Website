@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WWE Collectibles | Cards & Posters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#"><span>W</span> WWE <b>COLLECTIBLES</b></a>
+  <nav><a href="#shop">Shop</a><a href="#cards">Cards</a><a href="#posters">Posters</a></nav>
+  <button class="cart-button" id="cartButton">🛒 Cart <span id="cartCount">0</span></button>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">THE ULTIMATE FAN STORE</p>
+    <h1>OWN A PIECE<br>OF <em>WRESTLING</em><br>HISTORY.</h1>
+    <p>Collect your favourite WWE superstars — cards, iconic posters and legendary moments.</p>
+    <a class="red-button" href="#shop">SHOP COLLECTION <span>↗</span></a>
+  </div>
+  <div class="hero-caption">COLLECT • DISPLAY • CELEBRATE</div>
+</section>
+
+<section class="intro" id="shop">
+  <div><p class="eyebrow red">THE COLLECTION</p><h2>FIND YOUR <em>FAVOURITE.</em></h2></div>
+  <p>Trading-card style collectibles and wall-ready superstar posters. Choose an item and add it to your demo cart.</p>
+</section>
+
+<div class="shop-tools">
+  <input id="search" type="search" placeholder="Search a superstar or product...">
+  <div class="filters">
+    <button class="filter active" data-filter="all">All items</button>
+    <button class="filter" data-filter="card">Cards</button>
+    <button class="filter" data-filter="poster">Posters</button>
+  </div>
+</div>
+
+<main class="product-grid" id="productGrid">
+  <article class="product" data-type="card" data-search="roman reigns tribal chief card">
+    <div class="product-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Reigns%2C%20WrestleMania%20XL%20%28cropped%29.jpg" alt="Roman Reigns" onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Reigns_2017.jpg'"><span class="tag">TRADING CARD</span></div>
+    <div class="product-info"><small>SUPERSTAR CARD</small><h3>Roman Reigns</h3><p class="subtitle">The Tribal Chief Edition</p><div class="buy-row"><strong>₹149</strong><button class="add" data-name="Roman Reigns Card" data-price="149">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="poster" data-search="roman reigns tribal chief poster">
+    <div class="product-image poster-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Reigns%2C%20WrestleMania%20XL%20%28cropped%29.jpg" alt="Roman Reigns poster"><span class="tag">WALL POSTER</span></div>
+    <div class="product-info"><small>SUPERSTAR POSTER</small><h3>Roman Reigns</h3><p class="subtitle">Head of the Table</p><div class="buy-row"><strong>₹299</strong><button class="add" data-name="Roman Reigns Poster" data-price="299">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="card" data-search="seth rollins visionary card">
+    <div class="product-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Seth%20Rollins%2C%20WrestleMania%20XL.jpg" alt="Seth Rollins" onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Seth_Rollins_April_2015_II.jpg'"><span class="tag">TRADING CARD</span></div>
+    <div class="product-info"><small>SUPERSTAR CARD</small><h3>Seth Rollins</h3><p class="subtitle">The Visionary Edition</p><div class="buy-row"><strong>₹149</strong><button class="add" data-name="Seth Rollins Card" data-price="149">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="poster" data-search="seth rollins visionary poster">
+    <div class="product-image poster-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Seth%20Rollins%2C%20WrestleMania%20XL.jpg" alt="Seth Rollins poster"><span class="tag">WALL POSTER</span></div>
+    <div class="product-info"><small>SUPERSTAR POSTER</small><h3>Seth Rollins</h3><p class="subtitle">Burn It Down</p><div class="buy-row"><strong>₹299</strong><button class="add" data-name="Seth Rollins Poster" data-price="299">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="card" data-search="john cena never give up card">
+    <div class="product-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cena%202024.jpg" alt="John Cena" onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/John_Cena_WWE_Champion.jpg'"><span class="tag">TRADING CARD</span></div>
+    <div class="product-info"><small>SUPERSTAR CARD</small><h3>John Cena</h3><p class="subtitle">Never Give Up Edition</p><div class="buy-row"><strong>₹149</strong><button class="add" data-name="John Cena Card" data-price="149">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="poster" data-search="john cena poster">
+    <div class="product-image poster-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cena%202024.jpg" alt="John Cena poster"><span class="tag">WALL POSTER</span></div>
+    <div class="product-info"><small>SUPERSTAR POSTER</small><h3>John Cena</h3><p class="subtitle">You Can't See Me</p><div class="buy-row"><strong>₹299</strong><button class="add" data-name="John Cena Poster" data-price="299">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="card" data-search="undertaker phenom card">
+    <div class="product-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Undertaker%20attempts%20a%20Last%20Ride%20at%20WM30.jpg" alt="The Undertaker"><span class="tag">TRADING CARD</span></div>
+    <div class="product-info"><small>LEGEND CARD</small><h3>The Undertaker</h3><p class="subtitle">The Phenom Edition</p><div class="buy-row"><strong>₹169</strong><button class="add" data-name="Undertaker Card" data-price="169">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="poster" data-search="randy orton viper poster">
+    <div class="product-image poster-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Randy%20Orton%20at%20WM30.jpg" alt="Randy Orton"><span class="tag">WALL POSTER</span></div>
+    <div class="product-info"><small>SUPERSTAR POSTER</small><h3>Randy Orton</h3><p class="subtitle">The Viper</p><div class="buy-row"><strong>₹299</strong><button class="add" data-name="Randy Orton Poster" data-price="299">ADD TO CART +</button></div></div>
+  </article>
+  <article class="product" data-type="card" data-search="brock lesnar beast card">
+    <div class="product-image"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brock%20Lesnar%20At%20SummerSlam%202023%20%28cropped%29.jpg" alt="Brock Lesnar" onerror="this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Brock_Lesnar_-_WWE_Champion.jpg'"><span class="tag">TRADING CARD</span></div>
+    <div class="product-info"><small>SUPERSTAR CARD</small><h3>Brock Lesnar</h3><p class="subtitle">Beast Incarnate Edition</p><div class="buy-row"><strong>₹169</strong><button class="add" data-name="Brock Lesnar Card" data-price="169">ADD TO CART +</button></div></div>
+  </article>
+</main>
+
+<section class="cart-panel" id="cartPanel" aria-live="polite">
+  <div class="cart-head"><h2>YOUR CART</h2><button id="closeCart" aria-label="Close cart">✕</button></div>
+  <div id="cartItems"><p class="empty-cart">Your cart is empty. Add a collectible to get started!</p></div>
+  <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+  <button class="checkout" id="checkout">CONTINUE (DEMO ONLY)</button>
+  <p class="demo-note">Demo storefront: no real payment or order is processed.</p>
+</section>
+<div class="backdrop" id="backdrop"></div>
+
+<footer><a class="logo" href="#"><span>W</span> WWE <b>COLLECTIBLES</b></a><p>Fan-made demo shop. Not affiliated with WWE. Prices are sample prices.</p><a href="#">BACK TO TOP ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
